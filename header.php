@@ -14,11 +14,11 @@
 <body <?php body_class(); ?>>
 	<header>
 		<div class="navigation">      
-			<div class="container-fluid">
+			<div class="container">
                 <div class="row">
                     <div class="header-content">
                         <div class="col-xs-12">
-                            <ul id="nav"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></ul>
+                            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                            
                             Ini Header
                         </div>
                     </div>
