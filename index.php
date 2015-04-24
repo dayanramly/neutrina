@@ -10,18 +10,16 @@
 
 get_header(); ?>
 
-<div class="container">
-
+<div class="container-fluid">
   <div class="row">
+    <div class="main-content">
+      <div class="col-xs-12">
 
-    <div class="col-xs-12">
+        Konten Home yoi
 
-      Konten Home yoi
-
+      </div>
     </div>
-
   </div>
-
 </div>
 
 
