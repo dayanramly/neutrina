@@ -15,12 +15,12 @@
 	<header>
 		<div class="navigation">      
 			<div class="container">
-                <div class="row">
-                    <div class="header-content">
-                        <div class="col-xs-12">
-                            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                            
-                            Ini Header
-                        </div>
+                <div class="row header-content">
+                    <div class="col-xs-12 col-md-4">
+                        <img src="wp-content/themes/neutrina/img/logo.png" class="img-responsive">
+                    </div>
+                    <div class="col-xs-12 col-md-8 text-right">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
                     </div>
                 </div>
             </div>

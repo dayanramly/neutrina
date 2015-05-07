@@ -10,33 +10,33 @@ Version: 1
 @font-face {
   font-family: Source Sans Pro Exra Light;  
   src: local('SourceSansPro-ExtraLight.ttf'), 
-    url("fonts/sourcesans/SourceSansPro-ExtraLight.ttf") format('truetype');  
+  url("fonts/sourcesans/SourceSansPro-ExtraLight.ttf") format('truetype');  
 }
 @font-face {
   font-family: Source Sans Pro Light;  
   src: local('SourceSansPro-Light.ttf'), 
-    url("fonts/sourcesans/SourceSansPro-Light.ttf") format('truetype');  
+  url("fonts/sourcesans/SourceSansPro-Light.ttf") format('truetype');  
 }
 @font-face {
   font-family: Source Sans Pro Regular;  
   src: local('SourceSansPro-Regular.ttf'), 
-    url("fonts/sourcesans/SourceSansPro-Regular.ttf") format('truetype');  
+  url("fonts/sourcesans/SourceSansPro-Regular.ttf") format('truetype');  
   font-weight: normal;  
 }
 @font-face {
   font-family: Source Sans Pro Semi Bold;  
   src: local('SourceSansPro-Semibold.ttf'), 
-    url("fonts/sourcesans/SourceSansPro-Semibold.ttf") format('truetype');  
+  url("fonts/sourcesans/SourceSansPro-Semibold.ttf") format('truetype');  
 }
 @font-face {
   font-family: Source Sans Pro Bold;  
   src: local('SourceSansPro-Bold.ttf'), 
-    url("fonts/sourcesans/SourceSansPro-Bold.ttf") format('truetype');  
+  url("fonts/sourcesans/SourceSansPro-Bold.ttf") format('truetype');  
 }
 @font-face {
   font-family: Source Sans Pro Extra Bold;  
   src: local('SourceSansPro-Black.ttf'), 
-    url("fonts/sourcesans/SourceSansPro-Black.ttf") format('truetype');  
+  url("fonts/sourcesans/SourceSansPro-Black.ttf") format('truetype');  
 }
 
 body{
@@ -54,7 +54,7 @@ h2{
   font-family: "Source Sans Pro Bold";
 }
 h3{
-   font-family: "Source Sans Pro Semi Bold"; 
+ font-family: "Source Sans Pro Semi Bold"; 
 }
 h4{
   font-family: "Source Sans Pro Regular";
@@ -66,14 +66,73 @@ h6{
   font-family: "Source Sans Pro Exra Light";
 }
 
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+
 .header-content{
-  background: #eaeaea;
-  min-height: 150px;
+  background: #ffffff;
+  min-height: 80px;
+  padding: 15px;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.header-content img{height: 50px;padding: 5px;}
+
+.menu{
+
+}
+
+.menu ul{margin-bottom: 0px !important;}
+
+.menu ul>li{
+  font-family: "Source Sans Pro Light";
+  border-left: 1px solid #F5F5F5;
+  padding: 15px 20px;
+  font-size: 12pt;
+}
+
+.menu ul>li a{
+  color: #C8C8C8;
+}
+
+.menu ul>li a:hover{
+  text-decoration: none;
+  color: #555555;
 }
 
 .main-content{
-  background: #dedede;
+  background: #ffffff;
   min-height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-content{
+  background: #ffffff;
+  min-height: 80px;
+  border-top: 1px solid #F5F5F5;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-content h5{
+  color: #C8C8C8
+}
+
+.footer-icon{
+  color: #C8C8C8;
+}
+
+.footer-icon a{
+  border-radius: 5px;
+  color: #C8C8C8;
+  padding: 0px 8px;
+  font-size: 15pt;
+}
+
+.footer-icon a:hover{
+  color: #A8A8A8;
 }
 
 /*navbar style*/

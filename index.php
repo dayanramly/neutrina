@@ -11,18 +11,16 @@
 get_header(); ?>
 
 <div class="container">
-  <div class="row">
-    <div class="main-content">
-      <div class="col-xs-12">
+  <div class="row main-content">
+    <div class="col-xs-12">
 
-        <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
-        <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
-        <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
-        <h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
-        <h5>Grumpy wizards make toxic brew for the evil Queen and Jack.</h5>
-        <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
+      <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+      <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+      <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+      <h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
+      <h5>Grumpy wizards make toxic brew for the evil Queen and Jack.</h5>
+      <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
 
-      </div>
     </div>
   </div>
 </div>
