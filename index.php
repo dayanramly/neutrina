@@ -11,19 +11,47 @@
 get_header(); ?>
 
 <div class="container">
-  <div class="row main-content">
+  <div class="row top-profile">
     <div class="col-xs-12">
-
-      <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
-      <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
-      <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
-      <h4>Grumpy wizards make toxic brew for the evil Queen and Jack.</h4>
-      <h5>Grumpy wizards make toxic brew for the evil Queen and Jack.</h5>
-      <h6>Grumpy wizards make toxic brew for the evil Queen and Jack.</h6>
-
+        <img src="wp-content/themes/neutrina/img/profile.png" class="img-circle">
+      <span>
+        <h3 class="no-margin">hello</h3>
+        <h5 class="no-margin">I'm Dayan Ramly Ramadhan,</h5>
+        <h5 class="no-margin">a front-end developer who love clean and responsive design.</h5>
+      </span>
     </div>
   </div>
 </div>
 
+<div class="container">
+  <div class="row main-content">
+            <?php
+              query_posts( 'posts_per_page=6' );
+              ?>
+              <?php if ( have_posts() ) : ?>
+              <?php while ( have_posts() ) : the_post(); ?>
+              <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+              ?>
+            <div class="col-xs-8 col-xs-offset-2">
+              <div class="post-content">            
+                <h2><?php the_title(); ?> </h2>
+                <img class="img-responsive" src="<?php echo $image[0]; ?>">
+                <p><?php the_excerpt(); ?></p>
+                <a class="continue-reading" href="<?php the_permalink() ?>" role="button">Continue reading...</a>
+                <hr>
+              </div>
+            </div>
 
-<?php get_footer();?>
+            <?php endwhile;?>
+          <?php else : ?>
+     
+        <div class="col-xs-10 col-xs-offset-1">
+          <h4>Belum ada postingan</h4>
+        </div>
+        <?php endif; ?> 
+
+      </div>
+    </div>
+
+
+    <?php get_footer();?>

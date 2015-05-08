@@ -66,6 +66,8 @@ h6{
   font-family: "Source Sans Pro Exra Light";
 }
 
+.no-margin{margin:0 !important;}
+.no-padding{padding:0 !important;}
 .text-left{text-align: left;}
 .text-center{text-align: center;}
 .text-right{text-align: right;}
@@ -79,6 +81,7 @@ h6{
 
 .header-content img{height: 50px;padding: 5px;}
 
+/*header menu*/
 .menu{
 
 }
@@ -101,6 +104,7 @@ h6{
   color: #555555;
 }
 
+/*main container*/
 .main-content{
   background: #ffffff;
   min-height: 400px;
@@ -108,6 +112,58 @@ h6{
   margin-bottom: 20px;
 }
 
+.top-profile img{
+  height: 110px;
+}
+
+.top-profile span{
+  display: inline-block;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+.top-profile h3{
+  color: #888888;
+  font-size: 36pt;
+}
+
+.top-profile h5{
+  color: #c0c0c0;
+  font-size: 15pt;
+}
+
+.top-profile h3, .top-profile h5{
+
+}
+
+
+/*post content*/
+.post-content{
+
+}
+
+.post-content h2{
+  font-size: 38px;
+  color: #333333;
+}
+
+.post-content p{
+  color: #8a8a8a;
+}
+
+.post-content .continue-reading{
+  color: #1abc9c;
+}
+.post-content .continue-reading:hover{
+  color:#009d7e;
+  text-decoration: none;
+}
+
+.post-content hr{
+  margin-bottom: 0px;
+}
+
+/*footer container*/
 .footer-content{
   background: #ffffff;
   min-height: 80px;
@@ -132,7 +188,7 @@ h6{
 }
 
 .footer-icon a:hover{
-  color: #A8A8A8;
+  color: #1abc9c;
 }
 
 /*navbar style*/
