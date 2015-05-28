@@ -10,18 +10,7 @@
 
 get_header(); ?>
 
-<div class="container">
-  <div class="row top-profile">
-    <div class="col-xs-12">
-        <img src="wp-content/themes/neutrina/img/profile.png" class="img-circle">
-      <span>
-        <h3 class="no-margin">hello</h3>
-        <h5 class="no-margin">I'm Dayan Ramly Ramadhan,</h5>
-        <h5 class="no-margin">a front-end developer who love clean and responsive design.</h5>
-      </span>
-    </div>
-  </div>
-</div>
+
 
 <div class="container">
   <div class="row main-content">
@@ -33,10 +22,20 @@ get_header(); ?>
               <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
               ?>
             <div class="col-xs-8 col-xs-offset-2">
-              <div class="post-content">            
-                <h2><?php the_title(); ?> </h2>
+              <div class="post-content">
+
+                <h4 class="page-title"><?php the_title(); ?> </h4>
+                <div class="row post-additional">
+                  <div class="col-xs-8">
+                    <?php echo get_the_date('j F Y'); ?>, <?php the_category(', ') ?>                  
+                    </div>
+                  <div class="col-xs-4 text-right">
+                    <?php comments_number( '0 comment', '1 comment', '% comments' ); ?>
+                  </div>
+                </div>
+
                 <img class="img-responsive" src="<?php echo $image[0]; ?>">
-                <p><?php the_excerpt(); ?></p>
+                <h4><?php the_excerpt(); ?></h4>
                 <a class="continue-reading" href="<?php the_permalink() ?>" role="button">Continue reading...</a>
                 <hr>
               </div>
@@ -50,6 +49,38 @@ get_header(); ?>
         </div>
         <?php endif; ?> 
 
+        <div class="col-xs-8 col-xs-offset-2 list-category">
+          <h4>Kategori</h4>
+          <?php 
+          $args = array(
+            'show_option_all'    => '',
+            'orderby'            => 'name',
+            'order'              => 'ASC',
+            'style'              => 'list',
+            'show_count'         => 0,
+            'hide_empty'         => 1,
+            'use_desc_for_title' => 1,
+            'child_of'           => 0,
+            'feed'               => '',
+            'feed_type'          => '',
+            'feed_image'         => '',
+            'exclude'            => '',
+            'exclude_tree'       => '',
+            'include'            => '',
+            'hierarchical'       => 1,
+            'title_li'           => __( '' ),
+            'show_option_none'   => __( '' ),
+            'number'             => null,
+            'echo'               => 1,
+            'depth'              => 0,
+            'current_category'   => 0,
+            'pad_counts'         => 0,
+            'taxonomy'           => 'category',
+            'walker'             => null
+            );
+          wp_list_categories( $args );
+          ?>
+        </div>
       </div>
     </div>
 

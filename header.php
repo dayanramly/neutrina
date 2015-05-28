@@ -16,13 +16,16 @@
 		<div class="navigation">      
 			<div class="container">
                 <div class="row header-content">
-                    <div class="col-xs-12 col-md-4">
-                        <img src="wp-content/themes/neutrina/img/logo.png" class="img-responsive">
-                    </div>
-                    <div class="col-xs-12 col-md-8 text-right">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
-                    </div>
-                </div>
+                            <div class="col-xs-12 top-profile text-center">
+                                <img src="wp-content/themes/neutrina/img/profile.png" class="img-circle">
+                                <h4 class="no-margin">hello</h4>
+                                <h5 class="no-margin">I'm Dayan Ramly Ramadhan,</h5>
+                                <h5 class="no-margin">a front-end developer who love clean and responsive design.</h5>
+                            </div>
+<!--                 <div class="col-xs-12 col-md-8 text-right">
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>  
+                </div> -->
             </div>
         </div>
-    </header>
+    </div>
+</header>

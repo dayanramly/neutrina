@@ -90,7 +90,7 @@ h6{
 
 .menu ul>li{
   font-family: "Source Sans Pro Light";
-  border-left: 1px solid #F5F5F5;
+  /*border-left: 1px solid #F5F5F5;*/
   padding: 15px 20px;
   font-size: 12pt;
 }
@@ -112,24 +112,43 @@ h6{
   margin-bottom: 20px;
 }
 
+.top-profile{
+  margin: 20px 0px;
+  /*padding-left: 85px;*/
+}
+
 .top-profile img{
-  height: 110px;
+  height: 90px;
+  vertical-align: top;
+  margin-top: 20px;
 }
 
 .top-profile span{
   display: inline-block;
-  margin-left: 20px;
-  padding: 15px;
+  padding: 15px 15px 15px 30px;
 }
 
-.top-profile h3{
-  color: #888888;
+@media (max-width:768px) { 
+  .top-profile{
+    text-align: center;
+    padding: 15px;
+  }
+  .top-profile span{
+    display: inline-block;
+    padding: 15px;
+  }
+
+}
+
+.top-profile h4{
+  color: #009d7e;
   font-size: 36pt;
 }
 
 .top-profile h5{
-  color: #c0c0c0;
-  font-size: 15pt;
+  color: #888888;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .top-profile h3, .top-profile h5{
@@ -142,25 +161,76 @@ h6{
 
 }
 
-.post-content h2{
-  font-size: 38px;
+.post-additional{
+  margin-bottom: 10px;
+  color: #cccccc;
+  font-size: 12pt;
+}
+
+.post-additional a{
+  color: #aaaaaa;
+}
+
+.post-additional a:hover{
+  color: #888888;
+  text-decoration: none;
+}
+
+.page-title{
+  font-size: 40px;
   color: #333333;
+  margin-bottom: 0px !important;
+}
+
+.post-content-text{
+
 }
 
 .post-content p{
-  color: #8a8a8a;
+  color: rgba(0,0,0,.65);
+  font-size: 15pt;
+  line-height: 1.5;
 }
 
 .post-content .continue-reading{
   color: #1abc9c;
 }
-.post-content .continue-reading:hover{
+.post-content .continue-reading:hover,
+.post-content .continue-reading:active,
+.post-content .continue-reading:focus{
   color:#009d7e;
   text-decoration: none;
 }
 
 .post-content hr{
   margin-bottom: 0px;
+}
+
+.list-category h4{
+  margin-bottom: 20px;
+  font-size: 20pt;
+}
+
+.list-category li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #ededed;
+  border-radius: 50px;
+  font-size: 11pt;
+}
+
+.list-category li:hover{
+  border: 2px solid #cccccc;
+}
+
+.list-category li a{
+  color: #555555;
+}
+
+.list-category li a:hover{
+  color: #333333;
+  text-decoration: none;
 }
 
 /*footer container*/
